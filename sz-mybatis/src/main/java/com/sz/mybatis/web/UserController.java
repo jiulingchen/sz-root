@@ -29,7 +29,9 @@ public class UserController {
     }
 
     @GetMapping("/addUser")
-    public void addUser(Integer id, String username, String password){
-        userService.addUser(new MybatisUser(id,username, password));
+    public int addUser(String username, String password){
+        MybatisUser user = new MybatisUser(null, username, password);
+        userService.addUser(user);
+        return user.getId();
     }
 }

@@ -21,9 +21,8 @@ public interface UserMapper {
     @Select("SELECT * FROM user u WHERE u.id = #{id}")
     MybatisUser getUser(@Param("id")String id);
 
-    @Insert("INSERT INTO user VALUES (#{id}, #{username}, #{password});")
-    void addUser(@Param("id") Integer id,
-                 @Param("username") String username,
-                 @Param("password") String password);
+    @Insert("INSERT INTO user(user_name, pass_word) VALUES (#{user.username}, #{user.password});")
+    @SelectKey(keyProperty = "user.id", resultType = int.class, before = false, statement = "select last_insert_id()")
+    int addUser(@Param("user") MybatisUser user);
 
 }

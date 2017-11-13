@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void addUser(MybatisUser user) {
-        userMapper.addUser(user.getId(), user.getUsername(), user.getPassword());
+        userMapper.addUser(user);
     }
 
 }
