@@ -1,0 +1,27 @@
+# 本文件显示所有模块功能：
+# |- 子项目名
+# |--- 端口号
+# |--- 项目在注册中心的名称
+
+# 注册中心
+service:
+  port: 8000
+
+# 定时任务，集成spring-scheduled ，没有暴露的API 接口。
+scheduled:
+  port: 9002
+  application-name: sz-mybatis
+  api:
+   - **
+
+# 定时任务，集成spring-scheduled ，没有暴露的API 接口。
+scheduled:
+  port: 9001
+  application-name: sz-sheduled
+
+# 主项目，集成Feign 调用其他项目测试功能。
+core:
+  port: 9000
+  application-name: sz-mybatis
+  api:
+    - **
