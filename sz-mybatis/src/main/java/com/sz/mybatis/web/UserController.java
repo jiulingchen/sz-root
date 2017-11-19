@@ -1,7 +1,7 @@
 package com.sz.mybatis.web;
 
-import com.sz.mybatis.service.UserService;
 import com.sz.mybatis.entity.MybatisUser;
+import com.sz.mybatis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+
+/**
+ * @author a3575 on 2017-11-17 21:48:22
+ */
 @Component
 @RestController
 @RequestMapping(value = "/", produces = "application/json;charset=utf-8")
@@ -29,9 +33,9 @@ public class UserController {
     }
 
     @GetMapping("/addUser")
-    public int addUser(String username, String password){
+    public MybatisUser addUser(String username, String password){
         MybatisUser user = new MybatisUser(null, username, password);
         userService.addUser(user);
-        return user.getId();
+        return user;
     }
 }

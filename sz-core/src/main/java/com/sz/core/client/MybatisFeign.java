@@ -1,5 +1,6 @@
-package com.sz.mybatis.feign;
+package com.sz.core.client;
 
+import com.sz.core.client.Fallback.MybatisFeignFallback;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * @author a3575 on 2017-11-13 20:27:47
  */
-@FeignClient("SZ-MYBATIS")
+@FeignClient(name = "SZ-MYBATIS", fallback = MybatisFeignFallback.class)
 public interface MybatisFeign {
 
     /**
@@ -35,4 +36,5 @@ public interface MybatisFeign {
     @RequestMapping(value = "/addUser",method = RequestMethod.GET)
     String addUser(@RequestParam("username") String username,
                    @RequestParam("password") String password);
+
 }

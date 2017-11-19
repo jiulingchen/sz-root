@@ -1,0 +1,20 @@
+server:
+  port: 9004
+
+security:
+  oauth2:
+    client:
+      client-id: client_1
+      client-secret:
+      access-token-uri:
+      user-authorization-uri:
+    resource:
+      user-info-uri:
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 30
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

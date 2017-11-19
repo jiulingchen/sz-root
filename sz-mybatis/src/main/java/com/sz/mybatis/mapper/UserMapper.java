@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
+
 /**
  * @author a3575 on 2017-11-13 12:53:38
  */
@@ -19,10 +20,10 @@ public interface UserMapper {
     List<MybatisUser> getUserList();
 
     @Select("SELECT * FROM user u WHERE u.id = #{id}")
-    MybatisUser getUser(@Param("id")String id);
+    MybatisUser getUser(@Param("id") String id);
 
     @Insert("INSERT INTO user(user_name, pass_word) VALUES (#{user.username}, #{user.password});")
     @SelectKey(keyProperty = "user.id", resultType = int.class, before = false, statement = "select last_insert_id()")
-    int addUser(@Param("user") MybatisUser user);
+    void addUser(@Param("user") MybatisUser user);
 
 }

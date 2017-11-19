@@ -1,18 +1,20 @@
-package com.sz.mybatis;
+package com.sz.task.executor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
- * @author a3575 on 2017-11-09 19:04:54
+ * @author a3575 on 2017-11-18 22:50:28
  */
 @SpringBootApplication
-@EnableFeignClients
 @EnableEurekaClient
-public class CoreApplication {
+@EnableAsync
+public class TaskExecutorApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(CoreApplication.class, args);
+        SpringApplication.run(TaskExecutorApplication.class, args);
     }
+
 }

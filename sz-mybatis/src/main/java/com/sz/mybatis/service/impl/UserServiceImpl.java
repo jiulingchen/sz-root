@@ -1,8 +1,8 @@
 package com.sz.mybatis.service.impl;
 
-import com.sz.mybatis.service.UserService;
 import com.sz.mybatis.entity.MybatisUser;
 import com.sz.mybatis.mapper.UserMapper;
+import com.sz.mybatis.service.UserService;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

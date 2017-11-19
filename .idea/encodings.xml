@@ -2,13 +2,17 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sz-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sz-mybatis" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sz-mybatis" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sz-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sz-oauth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sz-oauth/authorization-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sz-oauth/oauth-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sz-oauth/resource-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sz-scheduled" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sz-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sz-taskexecutor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sz-taskexecutor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

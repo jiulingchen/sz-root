@@ -6,19 +6,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="authorization-server" />
+        <module name="oauth-client" />
+        <module name="oauth-service" />
+        <module name="resource-server" />
         <module name="sz-core" />
         <module name="sz-mybatis" />
+        <module name="sz-oauth2" />
         <module name="sz-scheduled" />
         <module name="sz-service" />
+        <module name="sz-taskexecutor" />
+        <module name="szoauth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="authorization-server" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="oauth-client" target="1.8" />
+      <module name="oauth-service" target="1.8" />
+      <module name="resource-server" target="1.8" />
       <module name="sz-core" target="1.8" />
       <module name="sz-mybatis" target="1.8" />
+      <module name="sz-oauth" target="1.8" />
+      <module name="sz-oauth2" target="1.8" />
+      <module name="sz-root" target="1.8" />
       <module name="sz-scheduled" target="1.8" />
       <module name="sz-service" target="1.8" />
+      <module name="sz-taskexecutor" target="1.8" />
+      <module name="szoauth" target="1.8" />
       <module name="szroot" target="1.8" />
+      <module name="test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

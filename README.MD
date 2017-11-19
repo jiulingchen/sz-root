@@ -18,6 +18,7 @@ SpringCloud 注册中心模块，需首先启动此项目。
 - **主要参数**：
   - port: 9000
   - application-name: sz-core
+  - swagger index：/swagger-ui.html
   
 -----------
 ## sz-scheduled
@@ -42,4 +43,10 @@ SpringCloud 注册中心模块，需首先启动此项目。
     - /addUser?username=${1}&password=${2}
       - method: get
       - 添加用户信息，无需id，自增主键，返回新添加用户的id 值
-      
+        
+-----------
+## sz-oauth
+该模块为oauth 功能父模块，有验证服务与客户端子模块。
+
+### oauth-service
+该子模块为oauth 验证服务端。
